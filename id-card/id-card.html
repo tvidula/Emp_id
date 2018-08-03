@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ID Card</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://www.jqueryscript.net/demo/Simple-jQuery-Based-Barcode-Generator-Barcode/jquery-barcode.js"></script>
+
+</head>
+<body>
+ 
+<div class="container">
+	<div class="row">
+		<div class="card offset-md-4 col-md-4 ">
+			<div class="card-header"><img src="assets/images/pink_web_logo.png" class="img-responsive logo" alt="Pinklemonade"></div>
+			<div class="card-body">
+				<div class="row">
+					<div class="col-md-12 text-center">
+													Valid Till: 01-08-2018
+					</div>
+					
+						<div class="col-md-4 text-center">
+							<img src="assets/images/profile_image.jpg" class="img-responsive logo" alt="Pinklemonade">
+						</div>
+						<div class="col-md-8">
+							<small>Name: Vidula T</small><br/>
+							<small>Designation:Senior Webdeveloper</small><br/>
+							<small>Emp Id: PL153</small><br/>
+						</div>
+					<div class="col-md-12">
+						<div id="demo"></div>
+
+					</div>
+				</div>
+			</div> 
+			<div class="card-footer"> <small>This belongs to Pinklemonade. If incase found please return to pinklemonade address.</small></div>
+		</div>
+	</div>
+</div>
+  <script>
+  $("#demo").barcode(
+"1234567890128", // Value barcode (dependent on the type of barcode)
+"ean13" // type (string)
+);  
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+body{
+	line-height:1.2;
+}
+.card{
+	border-radius: 0;
+    padding: 0px;
+	height: 340px;
+    flex: 0 0 226.78px;
+}
+.logo{
+	max-width:100%;
+}
